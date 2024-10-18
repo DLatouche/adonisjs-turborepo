@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.focus {
+  &:focus {
+    outline: 2px solid #919299;
+  }
+}
+
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #edece9;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #d3d1cb;
+  width: 6px;
+  border-radius: 100px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #aeaca6;
+}
+
+*::-webkit-scrollbar-corner {
+  background: #edece9;
+}
+
+:root {
+  --tw-background: 237 59% 12%;
+  --tw-background-muted: 0 0 97%;
+
+  --tw-primary: 79 100% 84%;
+  --tw-primary-muted: 79 75% 75%;
+
+  --tw-disabled: 0 0% 90%;
+  --tw-disabled-foreground: 0 0% 40%;
+
+  --tw-error: 345 100% 60%;
+  --tw-border: 233 4% 58%;
+}
+
+.border-gradient {
+  border: 1px solid;
+  border-image-slice: 2;
+  border-width: 1px;
+  height: 80%;
+  border-image-source: linear-gradient(180deg,rgb(255,255,255,0),rgb(255,255,255,0.5), rgb(255,255,255,0));
+}
+
+/* Mackinac */
+@font-face {
+  font-family: "Mackinac";
+  src: url("./fonts/mackinac/mackinac-regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Mackinac";
+  src: url("./fonts/mackinac/mackinac-regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mackinac";
+  src: url("./fonts/mackinac/mackinac-medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mackinac";
+  src: url("./fonts/mackinac/mackinac-bold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Grotesk */
+@font-face {
+  font-family: "Grotesk";
+  src: url("./fonts/grotesk/grotesk-light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Grotesk";
+  src: url("./fonts/grotesk/grotesk-light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Grotesk";
+  src: url("./fonts/grotesk/grotesk-regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Grotesk";
+  src: url("./fonts/grotesk/grotesk-medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Grotesk";
+  src: url("./fonts/grotesk/grotesk-bold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
